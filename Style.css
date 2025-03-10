@@ -146,6 +146,7 @@ body {
 }
 .teamMember:hover{
     scale: 1.05;
+    box-shadow: 0px 0px 0px 3px white;
 }
 
 .teamLogo {
@@ -193,6 +194,7 @@ body {
 }
 .ContMember:hover{
     scale: 1.05;
+    box-shadow: 0px 0px 0px 3px white;
 }
 .ExtSection {
     display: grid;
@@ -218,6 +220,7 @@ body {
      /* Adjust as needed */
     
 }
+
 .ExtInfo{
     margin: 5px 0 0;
     font-size: 16px;
@@ -226,7 +229,6 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* 3 columns */
     width:500px;
-    
 }
 .ExtButton{
     
@@ -318,6 +320,38 @@ body {
     padding: 15px;
     border-radius: 10px;
     width: 90%;
+}
+.whoAreWe {
+    text-align: left;
+    text-justify: left;
+    display: block;
+    
+}
+.Mission{
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.Mission h3{
+    font-family: 'Parkinsans', sans-serif;
+}
+.Mission p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.Divider{
+    border-color: #1c1c1c;
+    transition: scale 1s ease;
+}
+.Title {
+    padding: 6px;
+    position: relative;
+    z-index: 2;
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 40px;
+    background-clip: text;
+    color: white;
+    
 }
 
 
