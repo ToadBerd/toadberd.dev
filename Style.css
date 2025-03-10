@@ -1,11 +1,14 @@
 html {
     height: 100%;
     margin: auto;
-    width: 960px;
+    width: 1000px;
     overflow-y: scroll;
     background-color: #000000;
     background-image: url("cross.png");
+    background-repeat: repeat;  /* Ensure the image repeats horizontally */
+    animation: 30s infinite linear BGanim;
 }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,14 +16,14 @@ body {
     color: white;
     overflow: hidden;
     background: rgb(0,0,0);
-    background: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,0,0,0) 300%);
+    
 }
 .banner {
     background: url('Banner.png') no-repeat center center/cover;
     height: 400px;
     display: flex;
-    
 }
+
 
 
 .section {
@@ -65,6 +68,7 @@ body {
     font-family: 'Quicksand';
     align-items: right;
     justify-content: right;
+    
 }
 .download-button {
     display: inline-block;
@@ -76,15 +80,16 @@ body {
     border-radius: 5px;
     font-weight: bold;
     border: 1px solid white;
-    transition: transform 0.2s ease, background-color 1s ease-out;
+    transition: transform 0.1s ease, background-color 0.1s ease-out;
 }
+
 .download-button:hover {
     background-color: #cc4400;
     transform: scale(1.1);
-    transition: background-color 0s ease-in, transform 0.2s ease;
 }
+
 .download-button:not(:hover) {
-    transition: background-color 0.2s ease-out, transform 0.6s cubic-bezier(0.25, 1.5, 0.5, 1);
+    transform: scale(1);
 }
 .socials {
     background: #222;
@@ -136,7 +141,11 @@ body {
     border-radius: 10px;
     width: 100%;
     max-width: 150px; /* Adjust as needed */
+    transition: scale 0.3s ease, box-shadow 0.3s ease
     
+}
+.teamMember:hover{
+    scale: 1.05;
 }
 
 .teamLogo {
@@ -179,7 +188,11 @@ body {
     border-radius: 10px;
     width: 100%;
     max-width: 270px; /* Adjust as needed */
+    transition: scale 0.3s ease, box-shadow 0.3s ease
     
+}
+.ContMember:hover{
+    scale: 1.05;
 }
 .ExtSection {
     display: grid;
